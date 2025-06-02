@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Terms & Conditions | E-Library</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #f4f6f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      background: #fff;
+      width: 90%;
+      max-width: 800px;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .logo {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .logo img {
+      width: 60px;
+      height: 60px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .terms-content {
+      max-height: 400px;
+      overflow-y: auto;
+      padding-right: 10px;
+    }
+
+    .terms-content h3 {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      color: #0051a2;
+    }
+
+    .terms-content p {
+      font-size: 15px;
+      line-height: 1.6;
+      color: #444;
+      margin-bottom: 15px;
+    }
+
+    .agree-section {
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .agree-section label {
+      display: flex;
+      align-items: center;
+      font-size: 15px;
+      color: #333;
+    }
+
+    .agree-section input {
+      margin-right: 10px;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      background-color: #0066cc;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 15px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #004f99;
+    }
+
+    .footer-text {
+      margin-top: 30px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .footer-text a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+
+    .footer-text a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 25px 20px;
+      }
+
+      .terms-content {
+        max-height: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="logo">
+      <img src="https://cdn-icons-png.flaticon.com/512/3408/3408559.png" alt="E-Library Logo">
+    </div>
+
+    <h2>Terms & Conditions</h2>
+
+    <div class="terms-content">
+      <h3>1. Introduction</h3>
+      <p>
+        Welcome to the E-Library platform. By accessing or using our services, you agree to be bound by these Terms and Conditions.
+      </p>
+
+      <h3>2. Use of Service</h3>
+      <p>
+        You agree to use the E-Library for lawful purposes only. Any unauthorized use, including misuse of resources or content, may result in termination of your access.
+      </p>
+
+      <h3>3. User Accounts</h3>
+      <p>
+        You are responsible for maintaining the confidentiality of your login credentials and for all activities under your account.
+      </p>
+
+      <h3>4. Intellectual Property</h3>
+      <p>
+        All content on the E-Library, including text, graphics, logos, and software, is the property of the platform or its content providers.
+      </p>
+
+      <h3>5. Privacy</h3>
+      <p>
+        We are committed to protecting your privacy. Refer to our Privacy Policy for details about how we handle your data.
+      </p>
+
+      <h3>6. Termination</h3>
+      <p>
+        We reserve the right to suspend or terminate your access to the E-Library if you violate these Terms.
+      </p>
+
+      <h3>7. Changes to Terms</h3>
+      <p>
+        E-Library may update these Terms at any time. Continued use of the service after changes signifies your agreement to the new terms.
+      </p>
+
+      <h3>8. Contact</h3>
+      <p>
+        If you have any questions about these Terms, please contact us at support@elibrary.com.
+      </p>
+    </div>
+
+    <div class="agree-section">
+      <label><input type="checkbox" id="agreeBox"> I agree to the terms</label>
+      <button class="btn" onclick="proceed()">Continue</button>
+    </div>
+
+    <div class="footer-text">
+      <p><a href="signup.html">Back to Signup</a></p>
+    </div>
+  </div>
+
+  <script>
+    function proceed() {
+      const agreed = document.getElementById('agreeBox').checked;
+      if (agreed) {
+        alert("Thank you for accepting the terms!");
+        // Redirect or submit logic here
+        // window.location.href = "signup.html";
+      } else {
+        alert("Please agree to the terms before continuing.");
+      }
+    }
+  </script>
+
+</body>
+</html>
+
